@@ -1,0 +1,37 @@
+.deleteBtn{
+    position: absolute;
+    top: -13.5px;
+    right: 15px;
+    width: 120px;
+    height: 25px;
+    background-color: rgb(255, 38, 0);
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.rateblock{
+  position: absolute;
+  bottom: 20px;
+  right: 350px;
+  font-size: 25px;
+  
+}
+.cardContainer {
+    position: relative;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-flow: row ;
+    gap:20px;
+    justify-content: justify;
+    align-items: center;
+    border-style: double;
+    margin: 15px;}
+.show{
+    display: block;
+  }
+  .hide{
+    display: none;
+  }
