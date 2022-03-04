@@ -2,10 +2,12 @@ import React from 'react'
 import styles from "./Card.module.css"
 import StarRatingComponent from 'react-star-rating-component';
 import  "./Card.module.css"
-const MovieCard = ({movieList, type, deleteFunc}) => {
-  const cards = movieList.map(({img, name, description,rate},index)=> (
-  <div className={styles.cardContainer} key={index} style={{backgroundColor: type === "arabic" ? "pink":'lightgreen'}}>
-  <div><img  src={img} alt=''/></div>
+import { Link } from 'react-router-dom';
+
+const MovieCard = ({movieList, deleteFunc}) => {
+  const cards = movieList.map(({img, name, description,rate,id},index)=> (
+  <div className={styles.cardContainer} key={index} >
+  <Link to={`${id}`}><div><img  src={img} alt=''/></div></Link>
   <div><h1>{name}</h1> </div>
   <div><h3><b style={{fontSize:"23px"}}>Description</b> : {description}</h3> </div>
   <div className={styles.rateblock}>

@@ -28,7 +28,8 @@
     justify-content: justify;
     align-items: center;
     border-style: double;
-    margin: 15px;}
+    margin: 15px;
+  background-color: aqua;}
 .show{
     display: block;
   }

@@ -31,3 +31,9 @@ input[type=submit] {
   cursor: pointer;
 }
 
+.movie-details{
+display: flex;
+flex-direction: row;
+}
+
+
